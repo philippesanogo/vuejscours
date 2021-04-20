@@ -11,6 +11,7 @@
       <h1>Introduction à Vue.js</h1>
       <p>{{txt}}</p>
       <p> {{presentation()}} </p>
+      <a v-bind:href="urlDeVueJs" target="_blank">Aller sur le site de Vue.js</a>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
@@ -20,7 +21,8 @@
         data: {
           txt: "Hello World!",
           lastName: "Sanogo",
-          firstName: "Philippe"
+          firstName: "Philippe",
+          urlDeVueJs: "https://vuejs.org/"
         },
         methods: {
             presentation: function () {
