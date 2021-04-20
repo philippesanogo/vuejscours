@@ -9,11 +9,19 @@
   <body>
     <div id="app">
       <h1>Introduction à Vue.js</h1>
+      <p>{{presentation()}}</p>
+
       <h2>Liste des frameworks JS</h2>
-      <p> {{presentation()}} </p>
-      <a v-bind:href="urlDeVueJs" target="_blank">Aller sur le site de VueJS</a> <br>
-      <a v-bind:href="urlDeReactJs" target="_blank">Aller sur le site de reactJS</a> <br>
-      <a v-bind:href="urlDeAngularJs" target="_blank">Aller sur le site de angularJS</a>
+
+      <a v-bind:href="urlDeVueJs" target="_blank">Aller sur le site de VueJS</a>
+      <br />
+      <a v-bind:href="urlDeReactJs" target="_blank"
+        >Aller sur le site de reactJS</a
+      >
+      <br />
+      <a v-bind:href="urlDeAngularJs" target="_blank"
+        >Aller sur le site de angularJS</a
+      >
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
@@ -29,9 +37,9 @@
           urlDeAngularJs: "https://angularjs.org/"
         },
         methods: {
-            presentation: function () {
-                return ` Je m'appelle ${this.firstName}, je suis ${this.poste} `;
-              }
+          presentation: function() {
+            return ` Je m'appelle ${this.firstName}, je suis ${this.poste} `;
+          }
         }
       });
     </script>
